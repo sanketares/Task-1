@@ -55,7 +55,6 @@ jobs:
           minimum-approvals: 1
           issue-title: "Approval needed for Terraform deployment"
           issue-body: "Please approve or deny the Terraform deployment."
-          exclude-workflow-initiator-as-approver: false
 
 
 

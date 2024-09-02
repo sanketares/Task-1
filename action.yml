@@ -1,0 +1,25 @@
+name: Terraform Workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  terraform:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Use Terraform Action
+        uses: sanketares/Task-1@main
+        with:
+          aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          region: 'us-east-1'
+          approvers: 'user1'
+          minimum_approvals: 1
+          issue_title: 'Approval needed for Terraform deployment'
+          issue_body: 'Please approve or deny the Terraform deployment.'

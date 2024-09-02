@@ -54,7 +54,7 @@ jobs:
 
         with:
           secret: ${{ secrets.GITHUB_TOKEN }}
-          approvers: user1
+          approvers: sanketares
           minimum-approvals: 1
           issue-title: "Approval needed for Terraform deployment"
           issue-body: "Please approve or deny the Terraform deployment."

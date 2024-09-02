@@ -15,7 +15,7 @@ resource "aws_instance" "my_instance" {
 
 
 resource "aws_dynamodb_table" "terraform_lock1" {
-  name         = "terraform-lock1"
+  name         = "terraform-lock5"
   billing_mode = "PAY_PER_REQUEST"
   hash_key     = "LockID"
   attribute {

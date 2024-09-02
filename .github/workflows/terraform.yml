@@ -29,6 +29,9 @@ jobs:
           aws configure set aws_secret_access_key ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws configure set default.region us-east-1 # Set to your desired region
 
+      - name: Terraform destroy
+        run: terraform destroy -auto-approve
+
       - name: Terraform Init
         run: terraform init
         env:

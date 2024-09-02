@@ -3,7 +3,7 @@ terraform {
     bucket         = "bucket-name-sanket-2"
     key            = "terraform/state/terraform.tfstate"
     region         = "us-east1"
-    dynamodb_table = "your-dynamodb-table"
+    dynamodb_table = "terraform-lock5"
   }
 }
 

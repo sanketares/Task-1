@@ -48,7 +48,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
       - name: Manual Approval
-        uses: sanketares/Task-1@main
+        uses: sanketares/terraform@main
         with:
           secret: ${{ secrets.GITHUB_TOKEN }}
           approvers: user1

@@ -49,6 +49,16 @@ jobs:
 
 
 
+      - name: Manual Approval
+        uses: sanketares/Task-1@main
+        with:
+          secret: ${{ secrets.GITHUB_TOKEN }}
+          approvers: user1
+          minimum-approvals: 1
+          issue-title: "Approval needed for Terraform deployment"
+          issue-body: "Please approve or deny the Terraform deployment."
+
+
 
     
       - name: Terraform Apply

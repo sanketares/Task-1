@@ -17,7 +17,7 @@ resource "aws_instance" "my_instance" {
   instance_type = "t2.micro"               # Instance type
 
   tags = {
-    Name = "MyEC2Instance"
+    Name = "MyEC2Instance-new"
   }
 }
 
